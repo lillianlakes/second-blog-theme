@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lillian's Travel Blog</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="/normalize.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<img src="https://i.ibb.co/ZKtZwLx/lillian-lakes-square.jpg" width="20%">
+    <h1>Lillian&apos;s Travel Blog</h1>
+    <ul>
+      <li><a href="#about_me">About Me</a></li>
+      <li><a href="#places_visited">Places Visited</a></li>
+      <li><a href="#bucket_list">Bucket List</a></li>
+      <li><a href="#connect">Connect with Me</a></li>
+    </ul>
+  </header>
+
+  <article>
+    <h2 id="about_me">About Me</h2>
+    <p>Welcome to my site, where I share with you some of my favorite international destinations visited so far and those on my bucket list. I&apos;m Lillian Lakes and I&apos;m originally from West Africa. I was born in Liberia, and spent most of my childhood in Nigeria, before coming to the US for college. I&apos;ve lived in the US for more than twenty years, but enjoy traveling globally. I would like to hear about your experiences in places you&apos;ve visited. You just might influence my next trip abroad!</p>
+    <p>Please feel free to read about my adventures in the places I&apos;ve visited, like posts, leave a comment about your experience in the countries you&apos;ve visited, and subscribe to my blog. There&apos;s so much to explore and discover.</p>
+    <p class="quote">&quot;Twenty years from now you will be more disappointed by the things you didn&apos;t do than by the ones you did do. So throw off the bowlines! Sail away from safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover!&quot;</p>
+    <p class="person_quoted"> - Mark Twain</p>
+    <br>
+  </article>
+
+  <article>
+    <h2 id="places_visited">Places Visited</h2>
+    <p>So far, I have been fortunate to visit 23 countries and seven territories across North America, Europe, and Africa. Read about my experience in some of the places, feel free to like my posts and leave a comment sharing your experience in these countries. </p>
+
+    <div class="grid-container">
+      <div class="grid-item"><img src="https://i.ibb.co/ZHnqV9s/Benin.png" alt="Benin" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction1()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment1"></p>
+      </div>
+
+      <div class="grid-item"><img src="https://i.ibb.co/vXPvYrL/Dominican-Republic.jpg" alt="Dominican Republic" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction2()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment2"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/jT1W9Hf/England.jpg" alt="England" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction3()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment3"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/61sD7VY/France.jpg" alt="France" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction4()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment4"></p>
+      </div>
+
+      <div class="grid-item"><img src="https://i.ibb.co/CWDg5Lk/Ghana.png" alt="Ghana" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction5()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment5"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/YczvVtL/Italy.jpg" alt="Italy" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction6()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment6"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/BjVmmN7/Jamaica.jpg" alt="Jamaica" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction7()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment7"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/2yN2f4T/Liberia.png" alt="Liberia" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction8()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment8"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/QrQT4BZ/Nigeria.png" alt="Nigeria" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction9()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment9"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/G0vh38j/Spain.jpg" alt="Spain" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction10()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment10"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/rtYZJ8x/Togo.png" alt="Togo" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction11()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment11"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/MZbgwpj/Turks-Caicos.jpg" alt="Turks-Caicos" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction12()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment12"></p>
+      </div>
+    </div>
+
+    <br><br>
+    <h2 id="bucket_list">Bucket List</h2>
+    <p>I am yet to visit North, East or Southern Africa, Asia, South America or Antarctica, but I aspire to. Read about some of the travel adventures on my bucket list, feel free to like my posts and leave a comment sharing your experience in these countries.</p>
+
+    <div class="grid-container">
+      <div class="grid-item"><img src="https://i.ibb.co/bFVLQHj/China.jpg" alt="China" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction13()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment13"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/xF0zG24/Egypt.png" alt="Egypt" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction14()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment14"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/jRgfhnV/Greece.jpg" alt="Greece" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction15()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment15"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/FWVMp6V/India.jpg" alt="India" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction16()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment16"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/cC6K1yd/Israel.jpg" alt="Israel" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction17()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment17"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/54275V4/Japan.jpg" alt="Japan" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction18()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment18"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/Kz61m8q/Kenya.png" alt="Kenya" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction19()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment19"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/cFhFLqB/Maldives.jpg" alt="Maldives" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction20()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment20"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/PcB7JM1/Morocco.png" alt="Morocco" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction21()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment21"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/KjNgCkW/South-Africa.png" alt="South-Africa" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction22()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment22"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/vcgwQfF/Emirates.jpg" alt="Emirates" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction23()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment23"></p>
+      </div>
+      <div class="grid-item"><img src="https://i.ibb.co/XbNdGk1/Zimbabwe.png" alt="Zimbabwe" />
+        <button class="btn"><a href="https://en.wikipedia.org/wiki/Travel" target="_blank" title="Click to read my travel post.">READ</a></button>
+        <button class="btn" onclick="commentFunction24()">COMMENT</button>
+        <button class="btn" onclick="likeFunction()">LIKE</button>
+        <p id="comment24"></p>
+      </div>
+    </div>
+  </article>
+
+  <br>
+
+  <div class="connect_details">
+    <h2 id="connect">Subscribe to my Mailing List</h2>
+    <p>Keep up to date with my posts by joining my mailing list.</p>
+
+    <input type="email" placeholder="Enter your email address">
+
+    <input type="submit" onclick="emailSubmitted()">
+
+    <p id="emailConfirmation"></p>
+
+    <br>
+    <p>You can also follow me on social media: <br>
+      <a href="https://www.facebook.com/llakes" class="fa fa-facebook" target="_blank" title="Click for my Facebook profile"></a>
+      <a href="https://www.linkedin.com/in/lillianlakes" class="fa fa-linkedin" target="_blank" title="Click for my LinkedIn profile"></a>
+      <a href="http://twitter.com/Just_Lillie" class="fa fa-twitter" target="_blank" title="Click for my Twitter profile"></a>
+      <a href="https://www.instagram.com/lillian.lakes/" class="fa fa-instagram" target="_blank" title="Click for my Instagram profile"></a>
+      <a href="https://www.youtube.com/channel/UCCB7bfIJtpTTuy-w6JIGl-g" class="fa fa-youtube" target="_blank" title="Click for my YouTube profile"></a>
+    </p>
+  </div>
+
+  <article>
+    <h6> &copy; Copyright. All Rights Reserved.</h6>
+  </article>
+
+	<script src="script.js">
+	</script>
+
+</body>
+</html>
